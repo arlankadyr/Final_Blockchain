@@ -1,7 +1,7 @@
 //SPDX-License-Identifier: MIT
 pragma solidity ^0.8.24;
 
-//ERC-20
+
 interface IERC20 {
     function totalSupply() external view returns (uint256);
     function balanceOf(address account) external view returns (uint256);
@@ -74,3 +74,4 @@ contract ERC20 is IERC20 {
         emit Transfer(address(0), to, amount);
     }
 }
+
